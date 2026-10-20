@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f9f6ff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Маленькие гении">
+  <meta name="description" content="Мир маленьких гениев — добрые развивающие игры для детей 3–7 лет. Лео и Енотик приглашают играть и узнавать новое.">
+  <link rel="icon" type="image/png" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Мир маленьких гениев — развивающие игры 3–7 лет</title>
+  <script src="./lessons.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К основному содержанию</a>
+  <div class="site-shell">
+    <header class="topbar">
+      <button class="brand" data-go="home" aria-label="Мир маленьких гениев, на главную">
+        <img class="brand-icon" src="./icons/icon-192.png" alt="" width="48" height="48">
+        <span class="brand-copy"><strong>Мир маленьких <em>гениев</em></strong><small>Играем. Учимся. Открываем.</small></span>
+      </button>
+      <nav class="nav" aria-label="Главное меню">
+        <button data-go="home" class="nav-link active" data-nav="home">Главная</button>
+        <button data-go="progress" class="nav-link" data-nav="progress">Мои открытия</button>
+        <button data-go="parents" class="nav-link" data-nav="parents">Для родителей</button>
+      </nav>
+      <span id="networkStatus" class="network-status" aria-live="polite" title="Статус подключения"><span class="network-dot"></span><span class="network-label">Готово</span></span>
+    </header>
+    <main id="main" tabindex="-1" aria-live="polite"></main>
+    <footer class="footer"><span>С теплом к маленьким открытиям 💛</span><span>Академия Гениев · Без оценок и соревнований</span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
